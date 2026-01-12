@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produk | RaaXml01 Store</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/produk.css">
+<link rel="stylesheet" href="assets/css/animasi-global.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="marquee">✦ RAA XML 01 STORE ✦ PREMIUM DIGITAL ✦</div>
+</div>
+
+<!-- HAMBURGER -->
+<div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- SIDE MENU -->
+<nav class="side-menu" id="sideMenu">
+  <div class="menu-head">
+    <h3>RAAXML01</h3>
+    <span id="closeMenu">×</span>
+  </div>
+  <ul>
+  <li><a href="#products">Produk</a></li>
+  <li><a href="#about">Tentang Saya</a></li>
+
+  <!-- DEV ONLY -->
+  <li id="devMenu" style="display:none;">
+    <a href="#" id="devBtn">Dev Login</a>
+  </li>
+</ul>
+</nav>
+
+<!-- HERO HEADER -->
+<header class="hero-wrapper">
+  <div class="hero-banner">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1 class="shimmer-text">RaaXm01 Store</h1>
+      <p class="typing-text"></p>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<div class="container">
+
+  <div class="section-head">
+    <h1 class="shimmer-text">Produk Kami</h1>
+    <p data-typing="Pilih layanan terbaik untuk kebutuhanmu"></p>
+  </div>
+
+  <!-- PRODUCTS -->
+  <div class="products" id="products"></div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>Tentang Saya</h2>
+    <p>
+      Saya <b>RaaXml01</b>, developer bot WhatsApp & web premium.
+      Fokus pada automation stabil, performa tinggi, dan UI eksklusif.
+    </p>
+
+    <div class="about-grid">
+      <div>
+        <span>⚙</span>
+        <h4>Automation</h4>
+        <small>Fast & stabil</small>
+      </div>
+      <div>
+        <span>💎</span>
+        <h4>Premium UI</h4>
+        <small>Eksklusif</small>
+      </div>
+      <div>
+        <span>🛡</span>
+        <h4>Support</h4>
+        <small>Responsif</small>
+      </div>
+    </div>
+  </section>
+
+  <div class="future-space"></div>
+</div>
+
+<!-- MODAL -->
+<div id="modal">
+  <div class="modal-box">
+    <span class="close">×</span>
+    <h2 id="mTitle"></h2>
+    <p id="mDesc"></p>
+
+    <a id="mBtn" href="#">
+      <span class="btn-text">Order via WhatsApp</span>
+      <span class="ripple"></span>
+    </a>
+  </div>
+</div>
+
+<script src="assets/js/produk.js"></script>
+<script src="assets/js/reveal.js"></script>
+<script src="assets/js/dev-auth.js"></script>
+<script src="assets/js/typing.js"></script>
+
+</body>
+</html>

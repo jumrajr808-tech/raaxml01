@@ -1,0 +1,108 @@
+/* =========================
+   ELAINA SILVER THEME
+========================= */
+
+:root {
+  --silver-main: #e6e6f0;
+  --silver-soft: #cfd3ff;
+  --silver-glow: rgba(220, 220, 255, 0.6);
+  --elaina-purple: #b6b9ff;
+  --elaina-dark: #0b0f2a;
+}
+
+/* BODY BACKGROUND */
+body {
+  background: radial-gradient(circle at top, #12163a, #06081a);
+  color: var(--silver-main);
+}
+
+/* MARQUEE */
+.marquee {
+  background: linear-gradient(90deg, #0b0f2a, #141a45);
+}
+
+.marquee p {
+  color: var(--silver-soft);
+  text-shadow: 0 0 6px var(--silver-glow);
+}
+
+/* WELCOME TEXT */
+.container.show .welcome {
+  color: var(--silver-soft);
+  text-shadow: 0 0 10px var(--silver-glow);
+}
+
+/* TITLE */
+.container.show .title {
+  color: var(--silver-main);
+  text-shadow:
+    0 0 15px var(--silver-glow),
+    0 0 30px rgba(160, 170, 255, 0.25);
+}
+
+/* LOGO FRAME */
+.container.show .logo,
+.loader-logo {
+  border: 2px solid var(--silver-soft);
+  box-shadow:
+    0 0 20px rgba(200, 200, 255, 0.4),
+    inset 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+/* LOGO IMAGE */
+.logo img,
+.loader-logo img {
+  filter: brightness(1.05) contrast(1.05);
+}
+
+/* BUTTON */
+.btn {
+  border: 2px solid var(--silver-soft);
+  color: var(--silver-main);
+  box-shadow: 0 0 15px var(--silver-glow);
+  backdrop-filter: blur(4px);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #cfd3ff, #aab0ff);
+  color: #050716;
+  box-shadow: 0 0 25px rgba(220, 220, 255, 0.9);
+}
+
+/* REPORT LINK */
+.report {
+  color: #aab0ff;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+  background: linear-gradient(
+    90deg,
+    #cfd3ff,
+    #aab0ff,
+    #e6e6f0
+  );
+}
+
+/* LOADER BG */
+#loader {
+  background: radial-gradient(circle at center, #050716, #02030c);
+}
+
+/* STAR CANVAS */
+#stars {
+  filter: drop-shadow(0 0 4px rgba(200, 200, 255, 0.4));
+}
+
+/* SILVER GLOW ANIMATION */
+@keyframes silverGlow {
+  0% { box-shadow: 0 0 10px var(--silver-glow); }
+  50% { box-shadow: 0 0 30px rgba(200, 200, 255, 0.9); }
+  100% { box-shadow: 0 0 10px var(--silver-glow); }
+}
+
+.container.show .logo {
+  animation:
+    zoomIn 1.2s ease forwards,
+    silverGlow 3s ease-in-out infinite;
+}

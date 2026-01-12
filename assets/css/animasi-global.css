@@ -1,0 +1,48 @@
+/* =========================
+   PREMIUM MICRO MOTION
+========================= */
+
+/* Card base motion */
+.card{
+  transition:
+    transform .28s cubic-bezier(.22,.61,.36,1),
+    box-shadow .28s cubic-bezier(.22,.61,.36,1);
+  will-change:transform;
+}
+
+/* Hover – ringan & hidup */
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 14px 32px rgba(0,0,0,.32);
+}
+
+/* Image follow motion */
+.card img{
+  transition:transform .28s cubic-bezier(.22,.61,.36,1);
+}
+
+.card:hover img{
+  transform:scale(1.045);
+}
+
+/* Info button – tactile */
+.info-btn{
+  transition:
+    transform .18s cubic-bezier(.22,.61,.36,1),
+    box-shadow .18s ease;
+}
+
+.info-btn:hover{
+  transform:scale(1.08);
+  box-shadow:0 0 0 3px rgba(255,255,255,.08);
+}
+
+@media(max-width:600px){
+  .card:hover{
+    transform:none;
+    box-shadow:0 10px 24px rgba(0,0,0,.28);
+  }
+  .card:hover img{
+    transform:scale(1.02);
+  }
+}
